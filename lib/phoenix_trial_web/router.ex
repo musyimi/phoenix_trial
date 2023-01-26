@@ -17,6 +17,7 @@ defmodule PhoenixTrialWeb.Router do
   scope "/", PhoenixTrialWeb do
     pipe_through :browser
 
+    get "/phoenix", PhoenixController, :world
     get "/", PageController, :index
   end
 

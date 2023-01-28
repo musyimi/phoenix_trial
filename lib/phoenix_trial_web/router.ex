@@ -18,6 +18,8 @@ defmodule PhoenixTrialWeb.Router do
     pipe_through :browser
 
     get "/phoenix", PhoenixController, :world
+    get "/users", UserController, :index
+    get "/users/:id", UserController, :show
     get "/", PageController, :index
   end
 
